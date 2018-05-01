@@ -12,18 +12,36 @@ namespace WSFinanciera
     [ServiceContract]
     public interface IService1
     {
-
         [OperationContract]
-        string GetData(int value);
-
+        double getCuota(double monto, int plazo, double interes);
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        List<Amortizacion> getTabla_Amortizacion(double monto, int plazo, double interes);
+ 
 
-        // TODO: agregue aquí sus operaciones de servicio
     }
 
 
     // Utilice un contrato de datos, como se ilustra en el ejemplo siguiente, para agregar tipos compuestos a las operaciones de servicio.
+
+ /********************************clase amortizacion ************************/
+    //[DataContract]
+    public class Amortizacion
+    {
+
+        [DataMember]
+        public int periodo { get; set; }
+        [DataMember]
+        public double cuota { get; set; }
+        [DataMember]
+        public double interes { get; set; }
+        [DataMember]
+        public double abonoKs { get; set; }
+        [DataMember]
+        public double saldo { get; set; }
+    }
+/********************************************************************************************/
+
+
     [DataContract]
     public class CompositeType
     {

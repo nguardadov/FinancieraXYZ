@@ -6,7 +6,7 @@ using System.Web;
 // clase que nos servira para obtener el monto que pagara
 namespace WSFinanciera
 {
-    public class Calulo
+    public class Calculo
     {
         public double getCuota(double monto, int plazo, double interes)
         {
