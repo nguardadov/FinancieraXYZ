@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSFinanciera", "WSFinanciera\WSFinanciera.csproj", "{8F0CCDEF-1B57-45AC-845E-DD80497D855E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financiera", "Financiera\Financiera.csproj", "{BA4E611D-1B39-435C-B2AD-7594F68FABEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F0CCDEF-1B57-45AC-845E-DD80497D855E} = {8F0CCDEF-1B57-45AC-845E-DD80497D855E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{8F0CCDEF-1B57-45AC-845E-DD80497D855E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F0CCDEF-1B57-45AC-845E-DD80497D855E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F0CCDEF-1B57-45AC-845E-DD80497D855E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4E611D-1B39-435C-B2AD-7594F68FABEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4E611D-1B39-435C-B2AD-7594F68FABEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4E611D-1B39-435C-B2AD-7594F68FABEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4E611D-1B39-435C-B2AD-7594F68FABEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

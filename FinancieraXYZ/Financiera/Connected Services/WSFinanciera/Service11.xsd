@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:62517/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WSFinanciera" />
+  <xs:element name="getCuota">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="monto" type="xs:double" />
+        <xs:element minOccurs="0" name="plazo" type="xs:int" />
+        <xs:element minOccurs="0" name="interes" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCuotaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getCuotaResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTabla_Amortizacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="monto" type="xs:double" />
+        <xs:element minOccurs="0" name="plazo" type="xs:int" />
+        <xs:element minOccurs="0" name="interes" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTabla_AmortizacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WSFinanciera" minOccurs="0" name="getTabla_AmortizacionResult" nillable="true" type="q1:ArrayOfAmortizacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
